@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    <title>GM | PORTFOLIO</title>
+</head>
+<body>
+    <!-- page first section -->
+    <div class="container" id="home">
+        <header>
+            <div id="scroll-to-top" class="hidden">
+                <a href="#top">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>              
+            <div class="navbar">
+                <p>GIUSEPPE MONGELLI | JUNIOR WEB DEVELOPER</p>
+                <div class="links">
+                    <a href="#project">PROJECTS</a>
+                    <a href="#">CONTACTS</a>
+                </div>
+            </div>
+        </header>
+        <!-- main first section jumbotron -->
+    <main>
+            <section>
+                <div class="titol">
+                    <div class="description d-flex">
+                        <P>BENVENUTI NEL MIO PORTFOLIO</P>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/giuseppe-mongelli-3b1469278/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/GiuseppeM22"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                            <span class="aboutSpan">ABOUT ME</span>
+                            <div id="buttonDown" class="btn">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                    </div> 
+                    <div class="aboutMe none">
+                        <P>ABOUT ME</P>
+                        <div class="info">
+                        <span> Ciao Sono Giuseppe un Junior Web Developer. La mia passione per la programmazione web mi ha portato a formarmi in questo campo. Mi auguro che questo portfolio vi aiuti a conoscermi meglio! </span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="m-2">
+                                <span class="aboutSpan">SKILLS</span>
+                                <div id="downButton" class="btn">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="m-2">
+                                <span class="aboutSpan">WELCOME</span>
+                                <div id="buttonUp" class="btn">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills none">
+                        <p>SKILLS</p>
+                        <div class="logoSkills">
+                            <img src="./img/html.png" alt="html">
+                            <img src="./img/css.png" alt="css">
+                            <img src="./img/sass.png" alt="sass">
+                            <img src="./img/bootstrap.png" alt="bootstrap">
+                            <img src="./img/javascript.png" alt="javascript">
+                            <img src="./img/vue.png" alt="vue">
+                            <img src="./img/vite.png" alt="vite">
+                            <img src="./img/php.png" alt="php">
+                            <img src="./img/laravel.png" alt="laravel">
+                            <img src="./img/sql.png" alt="mySql">
+                        </div>
+                        <div id="upButton" class="btn">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+                    <div class="imgTitol">
+                        <!-- immagine da css -->
+                    </div>
+                </div>
+            </section>
+            <!-- end first section -->
+        </div>
+        <!-- main second section -->
+        <section id="project">
+            <h1>MY PROJECTS</h1>
+            <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"css-mode="true">
+                <swiper-slide><img src="./img/whatsapp.png" alt="whatsapp"></swiper-slide>
+                <swiper-slide><img src="./img/discord.png" alt="discord"></swiper-slide>
+                <swiper-slide><img src="./img/discord2.png" alt="discord2"></swiper-slide>
+                <swiper-slide><img src="./img/netflix1.png" alt="netflix1"></swiper-slide>
+                <swiper-slide><img src="./img/netflix2.png" alt="netflix2"></swiper-slide>
+                <swiper-slide><img src="./img/spotify.png" alt="spotify"></swiper-slide>
+                <swiper-slide><img src="./img/comix.png" alt="comix"></swiper-slide>
+            </swiper-container>
+        </section>
+        
+    </main>
+    
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src="./mian.js"></script>
+</html>
