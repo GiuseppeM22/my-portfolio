@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
     <title>GM | PORTFOLIO</title>
 </head>
@@ -17,29 +21,30 @@
         <header>
             <div id="scroll-to-top" class="hidden">
                 <a href="#top">
-                  <i class="fa-solid fa-arrow-up"></i>
+                    <i class="fa-solid fa-arrow-up"></i>
                 </a>
             </div>              
             <div class="navbar">
                 <p>GIUSEPPE MONGELLI | JUNIOR WEB DEVELOPER</p>
                 <div class="links">
                     <a href="#project">PROJECTS</a>
-                    <a href="#">CONTACTS</a>
+                    <a href="#message">CONTACT-ME</a>
+                    <a href="./img/CV-IT Giuseppe Mongelli.pdf" download>DOWNLOAD CV</a>
                 </div>
             </div>
         </header>
         <!-- main first section jumbotron -->
     <main>
-            <section>
-                <div class="titol">
+            <section class="presentation">
+                <div class="titol animate__animated animate__fadeInDownBig">
                     <div class="description d-flex">
-                        <P>BENVENUTI NEL MIO PORTFOLIO</P>
+                        <p>BENVENUTI NEL MIO PORTFOLIO</p>
                         <div class="social">
                             <a href="https://www.linkedin.com/in/giuseppe-mongelli-3b1469278/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/GiuseppeM22"><i class="fa-brands fa-github"></i></a>
                         </div>
                             <span class="aboutSpan">ABOUT ME</span>
-                            <div id="buttonDown" class="btn">
+                            <div id="buttonDown" class="btn  animate__animated animate__heartBeat animate__delay-2s animate__infinite">
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
                     </div> 
@@ -90,7 +95,7 @@
         </div>
         <!-- main second section -->
         <section id="project">
-            <h1>MY PROJECTS</h1>
+            <h1>SOME PROJECTS</h1>
             <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"css-mode="true">
                 <swiper-slide><img src="./img/whatsapp.png" alt="whatsapp"></swiper-slide>
                 <swiper-slide><img src="./img/discord.png" alt="discord"></swiper-slide>
@@ -99,10 +104,18 @@
                 <swiper-slide><img src="./img/netflix2.png" alt="netflix2"></swiper-slide>
                 <swiper-slide><img src="./img/spotify.png" alt="spotify"></swiper-slide>
                 <swiper-slide><img src="./img/comix.png" alt="comix"></swiper-slide>
+                <p>Prova</p>
             </swiper-container>
         </section>
         
     </main>
+
+    <form action="mailto:giu.mongelli97@gmail.com" method="get" enctype="text/plain">
+        Student Name:<br><input type="text" name="email"> <br>
+        Student Subject:<br><textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Send">
+     </form>
+        
     
 
 </body>
