@@ -1,0 +1,25 @@
+{
+    "projects": [
+      {
+        "image": "./img/spotify.png",
+        "title": "HTML - CSS",
+        "paragraph": "Questo progetto è inspirato alla pagina web del sito di Spotify. Uno dei primi progetti che conteneva del mark-up più complesso"
+      }, 
+      {
+        "image": "./img/whatsapp.png",
+        "title": "HTML - CSS - VUE.JS",
+        "paragraph": "Inquesto progetto, ho ricreato, una pagina web inspirata al famoso WhatsApp web. Ogni chat era popolata ed era possibile inviare dei messaggi e ricevere delle risposte personalizzate"
+      },
+     
+      {
+        "image": "./img/netflix1.png",
+        "title": "HTML - CSS - VUE.JS",
+        "paragraph": "Questo progetto e l'immagine che segue sono inspirate all'applicazione Netflix. In questo progetto abbiamo sperimentato le chiamate api tramite le quali grazie alla ricerca avanzata era possibile visualizzare a schermo i contenuti ricercati"
+      },
+      {
+        "image": "./img/netflix2.png",
+        "title": "HTML - CSS - VUE.JS",
+        "paragraph": "In questa immagine ad esempio, possiamo notare come nella ricerca del film Titanic, la ricerca produce tutti i film correlati a quel nome"
+      }
+    ]
+  }

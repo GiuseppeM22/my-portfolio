@@ -4,7 +4,7 @@ let downbutton = document.getElementById('downButton');
 let upButton = document.getElementById('upButton');
 let description = document.querySelector('.description');
 let aboutMe = document.querySelector('.aboutMe');
-let skills = document.querySelector('.skills')
+let skills = document.querySelector('.skills');
 
 // main first section button
 btnDown.addEventListener('click', function(){
@@ -63,6 +63,59 @@ window.addEventListener('scroll', function () {
       scrollToTop.classList.remove('visible');
     }
   });
+
+  //carosello logica
+let counter = 0;
+// Memorizza i dati dei progetti globalmente
+let projectsData; 
+
+function caricaJSON() {
+  fetch('dati.json')
+    .then(response => response.json())
+    .then(data => {
+      projectsData = data.projects; // Memorizza i dati globalmente
+      elaboraDati();
+    })
+    .catch(error => {
+      console.error('Errore nel caricamento del JSON:', error);
+    });
+}
+
+function elaboraDati() {
+  const imageCarusel = document.querySelector('.imageCarusel');
+  const projectsInfo = document.querySelector('.projectsInfo');
+
+  // Imposta i dati in base al contatore corrente
+  imageCarusel.src = projectsData[counter].image;
+  projectsInfo.querySelector('h4').textContent = projectsData[counter].title;
+  projectsInfo.querySelector('p').textContent = projectsData[counter].paragraph;
+}
+
+function prevButton() {
+  if (counter > 0) {
+    counter--;
+  } else {
+    // Torna all'ultimo elemento se si è alla prima immagine
+    counter = projectsData.length - 1; 
+  }
+  elaboraDati();
+}
+
+function nextButton() {
+  if (counter < projectsData.length - 1) {
+    counter++;
+  } else {
+    // Torna al primo elemento se si è all'ultima immagine
+    counter = 0; 
+  }
+  elaboraDati();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  caricaJSON();
+});
+
+  
   
 
 

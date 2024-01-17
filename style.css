@@ -84,6 +84,12 @@
     font-size: 16px;
 }
 
+.links i{
+    color: rgb(219, 208, 179);
+    display: none;
+    font-size: 30px;
+}
+
 .navbar a:hover{
     padding: 10px;
     margin-right: 30px;
@@ -144,9 +150,7 @@
 .description, .aboutMe, .skills{
     margin-left: 20px;
     color: rgb(220 220 220);
-    /* color: rgb(167 158 133); */
     width: 380px;
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -188,7 +192,6 @@
 
 #project{
     max-width: 100vw;
-    height: 100vh;
     position: relative;
 }
 
@@ -224,4 +227,278 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* seconda grafica main progetti */
+
+.projectContainer{
+    width: 80%;
+}
+
+/* terza parte main my story */
+
+.storyContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraphContainer{
+    width: calc(100% / 2 - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 0px 20px 20px 20px;
+}
+
+/* carosello personalizzato */
+.projectsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.projectsCarusel{
+    position: relative;
+    width: 800px;
+    margin-bottom: 30px;
+    
+}
+.projectsCarusel img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.projectsInfo{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 800px;
+    height: 150px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.projectsInfo h4{
+    margin: 10px;
+
+}
+
+.leftButton{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    font-size: 30px;
+    color: #5f6cdf;
+    cursor: pointer;
+}
+
+.rightButton{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 30px;
+    color: #5f6cdf;
+    cursor: pointer;
+}
+
+/* footer */
+
+.bodyFooter{
+    width: 100%;
+    height: 300px;
+    background: #1b2261;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerIntro p{
+    color:rgb(233, 186, 56);
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.footerSocial i{
+    font-size: 20px;
+    color:rgb(219, 208, 179);
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 10px;
+    transition: background-color 0.4s ease;
+
+}
+
+.footerSocial i:hover{
+    font-size: 20px;
+    color:rgb(219, 208, 179);
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 10px;
+    background-color: rgba(252, 127, 10, 0.8);
+    cursor: pointer;
+    /* animation: bounce 1.5s; */
+}
+
+.footerWhitLove{
+    color:rgb(219, 208, 179);
+    font-size: 15px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* tablet mediaquery */
+
+@media  screen and (max-width:1000px){
+
+    .container{
+        width: 100%;
+    }
+
+    .presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .titol{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .projectsCarusel{
+        position: relative;
+        width: 80%;
+        margin-bottom: 30px;
+        
+    }
+
+    .projectsInfo{
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        height: 150px;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    #project {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .projectsContainer {
+        display: flex;
+        justify-content: center;
+        /* align-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #project h1 {
+        /* padding: 50px; */
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px;
+        color: rgb(219, 208, 179);
+    }
+
+    .links a{
+        display: none;
+    }
+
+    .links i{
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+}
+
+/* smartphone mediaquery */
+
+@media  screen and (max-width:500px){
+
+    .container{
+        width: 100%;
+    }
+
+    .presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .titol{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .projectsCarusel{
+        position: relative;
+        width: 80%;
+        margin-bottom: 30px;
+        
+    }
+
+    .projectsInfo{
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+        height: 150px;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    #project {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .projectsContainer {
+        display: flex;
+        justify-content: center;
+        /* align-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #project h1 {
+        /* padding: 50px; */
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px;
+        color: rgb(219, 208, 179);
+    }
+
+    .links a{
+        display: none;
+    }
 }

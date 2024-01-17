@@ -8,10 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
     <title>GM | PORTFOLIO</title>
 </head>
@@ -27,9 +25,11 @@
             <div class="navbar">
                 <p>GIUSEPPE MONGELLI | JUNIOR WEB DEVELOPER</p>
                 <div class="links">
+                    <a href="#myStory">HISTORY</a>
                     <a href="#project">PROJECTS</a>
-                    <a href="#message">CONTACT-ME</a>
-                    <a href="./img/CV-IT Giuseppe Mongelli.pdf" download>DOWNLOAD CV</a>
+                    <a href="#footer">CONTACTS</a>
+                    <a href="./img/CV Giuseppe Mongelli.pdf" download>DOWNLOAD CV</a>
+                    <i class="fa-solid fa-bars"></i> 
                 </div>
             </div>
         </header>
@@ -38,7 +38,7 @@
             <section class="presentation">
                 <div class="titol animate__animated animate__fadeInDownBig">
                     <div class="description d-flex">
-                        <p>BENVENUTI NEL MIO PORTFOLIO</p>
+                        <p>WELCOME TO MY PORTFOLIO</p>
                         <div class="social">
                             <a href="https://www.linkedin.com/in/giuseppe-mongelli-3b1469278/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/GiuseppeM22"><i class="fa-brands fa-github"></i></a>
@@ -51,7 +51,7 @@
                     <div class="aboutMe none">
                         <P>ABOUT ME</P>
                         <div class="info">
-                        <span> Ciao Sono Giuseppe un Junior Web Developer. La mia passione per la programmazione web mi ha portato a formarmi in questo campo. Mi auguro che questo portfolio vi aiuti a conoscermi meglio! </span>
+                        <span> Hi, I'm Giuseppe, a Junior Web Developer. My passion for web programming led me to train in this field. I hope this portfolio helps you get to know me better! </span>
                         </div>
                         <div class="d-flex">
                             <div class="m-2">
@@ -96,29 +96,40 @@
         <!-- main second section -->
         <section id="project">
             <h1>SOME PROJECTS</h1>
-            <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"css-mode="true">
-                <swiper-slide><img src="./img/whatsapp.png" alt="whatsapp"></swiper-slide>
-                <swiper-slide><img src="./img/discord.png" alt="discord"></swiper-slide>
-                <swiper-slide><img src="./img/discord2.png" alt="discord2"></swiper-slide>
-                <swiper-slide><img src="./img/netflix1.png" alt="netflix1"></swiper-slide>
-                <swiper-slide><img src="./img/netflix2.png" alt="netflix2"></swiper-slide>
-                <swiper-slide><img src="./img/spotify.png" alt="spotify"></swiper-slide>
-                <swiper-slide><img src="./img/comix.png" alt="comix"></swiper-slide>
-                <p>Prova</p>
-            </swiper-container>
+            <div class="projectsContainer">
+                <div class="projectsCarusel">
+                    <!-- carichiamo l'img in modo dinamico -->
+                    <img class="imageCarusel" src="" alt="immagine">
+                    <i onclick="prevButton()" class="leftButton fa-solid fa-circle-chevron-left"></i>
+                    <i onclick="nextButton()" class="rightButton fa-solid fa-circle-chevron-right"></i>
+                </div>
+                <div class="projectsInfo">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
         </section>
-        
+        <!-- end second section -->
     </main>
 
-    <form action="mailto:giu.mongelli97@gmail.com" method="get" enctype="text/plain">
-        Student Name:<br><input type="text" name="email"> <br>
-        Student Subject:<br><textarea name="message" id="message" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Send">
-     </form>
-        
+    <!-- footer -->
+    <footer id="footer">
+        <div class="bodyFooter">
+            <div class="footerSocial">
+                <a href="https://github.com/GiuseppeM22"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/giuseppe-mongelli-3b1469278/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:giu.mongelli97@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="./img/CV_Giuseppe Mongelli.pdf"><i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="footerIntro">
+                <p>The last one is my CV not a virus</p>
+            </div>
+        </div>
+    </footer>
     
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-<script src="./mian.js"></script>
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>
