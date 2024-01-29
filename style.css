@@ -413,9 +413,12 @@ swiper-slide img {
     .presentation{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        margin-top: 50px;
         height: 100vh;
+        position: relative;
     }
+   
 
     .titol{
         display: flex;
@@ -436,7 +439,7 @@ swiper-slide img {
         border-radius: 10px;
         width: 80%;
         height: 150px;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         font-family: 'Roboto', sans-serif;
         font-family: 'Source Code Pro', monospace;
     }
@@ -488,13 +491,6 @@ swiper-slide img {
 
     .container{
         width: 100%;
-    }
-
-    .presentation{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
     }
 
     .titol{
