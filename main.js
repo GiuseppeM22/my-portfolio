@@ -10,14 +10,14 @@ let skills = document.querySelector('.skills');
 btnDown.addEventListener('click', function(){
     if(description.classList.contains('none')){
         description.classList.remove('none');
-        description.classList.add('d-flex')
+        description.classList.add('d_flex')
         aboutMe.classList.add('none')
-        aboutMe.classList.remove('d-flex')
+        aboutMe.classList.remove('d_flex')
     }else if(aboutMe.classList.contains('none')){
         aboutMe.classList.remove('none');
-        aboutMe.classList.add('d-flex')
+        aboutMe.classList.add('d_flex')
         description.classList.add('none')
-        description.classList.remove('d-flex')
+        description.classList.remove('d_flex')
     }
     
 })
@@ -25,32 +25,32 @@ btnDown.addEventListener('click', function(){
 btnUp.addEventListener('click', function(){
     if(aboutMe.classList.contains('none')){
         aboutMe.classList.remove('none');
-        aboutMe.classList.add('d-flex')
+        aboutMe.classList.add('d_flex')
         description.classList.add('none')
-        description.classList.remove('d-flex')
+        description.classList.remove('d_flex')
     }else if(description.classList.contains('none')){
         description.classList.remove('none');
-        description.classList.add('d-flex')
+        description.classList.add('d_flex')
         aboutMe.classList.add('none')
-        aboutMe.classList.remove('d-flex')
+        aboutMe.classList.remove('d_flex')
     }
 })
 
 downButton.addEventListener('click', function(){
     if(skills.classList.contains('none')){
         skills.classList.remove('none')
-        skills.classList.add('d-flex')
+        skills.classList.add('d_flex')
         aboutMe.classList.add('none')
-        aboutMe.classList.remove('d-flex')
+        aboutMe.classList.remove('d_flex')
     }
 })
 
 upButton.addEventListener('click', function(){
     if(aboutMe.classList.contains('none')){
         aboutMe.classList.remove('none')
-        aboutMe.classList.add('d-flex')
+        aboutMe.classList.add('d_flex')
         skills.classList.add('none')
-        skills.classList.remove('d-flex')
+        skills.classList.remove('d_flex')
     }
 })
 
@@ -73,7 +73,7 @@ function caricaJSON() {
   fetch('dati.json')
     .then(response => response.json())
     .then(data => {
-      projectsData = data.projects; // Memorizza i dati globalmente
+      projectsData = data.projects; 
       elaboraDati();
     })
     .catch(error => {
@@ -110,6 +110,25 @@ function nextButton() {
   }
   elaboraDati();
 }
+
+const body = document.querySelector('body')
+const menuOffCanvas = document.querySelectorAll('.menuOffCanvas')
+const offCanvas = document.querySelector('.offcanvas')
+menuOffCanvas.forEach(function(menu) {
+  menu.addEventListener('click', function() {
+    offCanvas.classList.remove('show');
+    offCanvas.removeAttribute('aria-modal');
+    offCanvas.removeAttribute('role');
+    const backDrop = document.querySelector('.offcanvas-backdrop')
+    if (backDrop !== null) {
+      backDrop.remove();
+    }
+    console.log('click');
+    body.style.overflow = ''
+    body.style.paddingRight = ''
+
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   caricaJSON();
