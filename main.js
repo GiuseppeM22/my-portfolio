@@ -36,7 +36,7 @@ btnUp.addEventListener('click', function(){
     }
 })
 
-downButton.addEventListener('click', function(){
+downbutton.addEventListener('click', function(){
     if(skills.classList.contains('none')){
         skills.classList.remove('none')
         skills.classList.add('d_flex')
